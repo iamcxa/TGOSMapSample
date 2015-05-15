@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="TGOS-Android-sdk">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/TGOS-Android-sdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../TGOSMapSampleAndroid/libs/TGOS-Android-sdk.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
