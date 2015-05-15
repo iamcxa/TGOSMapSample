@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewerUpdateDemo" >
+
+    <RelativeLayout
+        android:id="@+id/AddMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Bounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBounds"
+            android:text="Bounds" />
+                   <Button
+            android:id="@+id/MoveToKl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMovetToKL"
+            android:text="MoveToKL" />
+    </LinearLayout>
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:layout_weight="1">
+      <Button
+        android:id="@+id/scroll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onScrollLeft"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="←"/>
+      <Button
+        android:id="@+id/scroll_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onScrollUp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/scroll_left"
+        android:text="↑"/>
+      <Button
+        android:id="@+id/scroll_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onScrollDown"
+        android:layout_below="@id/scroll_up"
+        android:layout_toRightOf="@id/scroll_left"
+        android:text="↓"/>
+      <Button
+        android:id="@+id/scroll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onScrollRight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/scroll_down"
+        android:text="→"/>
+
+    </RelativeLayout>
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="right"
+      android:orientation="vertical">
+      <Button
+        android:id="@+id/zoom_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onZoomOut"
+        android:text="-"/>
+      <Button
+        android:id="@+id/zoom_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onZoomIn"
+        android:text="+"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

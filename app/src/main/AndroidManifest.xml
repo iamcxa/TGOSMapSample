@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.supergeo.gcs.tgosmapsimple"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         >
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.UISetting_Demo"
+            android:label="@string/UIsetting" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.BaseMap_Demo"
+            android:label="@string/base_map_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.Marker_Demo"
+            android:label="@string/marker_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.EventDemo"
+            android:label="@string/event_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.Polyline_Demo"
+            android:label="@string/polyline_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.CircleDemo"
+            android:label="@string/circle_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.Polygon_Demo"
+            android:label="@string/polygon_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.MapTypeDemo"
+            android:label="@string/map_type_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.GroundDemo"
+            android:label="@string/ground_demo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.ARDemo"
+            android:label="@string/ardemo" >
+        </activity>
+        <activity
+            android:name="com.supergeo.gcs.tgosmapsimple.ViewerUpdateDemo"
+            android:label="@string/viewer_update_demo" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>			<!--  -->		
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />			<!-- Allows an application to read or write the system settings. -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	<!-- 允許程式修改 SD 卡內的檔案 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>		<!-- 允許程式存取行動網路狀態 -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>			<!-- 允許程式存取Wi-Fi網路狀態 -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>		<!-- 允許一個程式存取精確位置(如GPS) -->
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>		<!-- 允許程式新增模擬位置(DDMS提供模擬GPS位址給模擬器測試用) -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />	<!-- Allows an application to access extra location provider commands -->
+    <uses-permission android:name="android.permission.VIBRATE" />					<!-- 允許存取振動設備 -->
+	<uses-permission android:name="android.permission.INTERNET" />					<!-- 允許程式使用網路權限 -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.CAMERA" />					<!-- 請求存取使用照相設備 -->
+</manifest>

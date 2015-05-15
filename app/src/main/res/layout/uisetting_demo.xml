@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UISetting" >
+
+    <RelativeLayout
+        android:id="@+id/AddMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="175dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D000"
+            android:orientation="vertical"
+            android:paddingRight="5dp" >
+
+            <CheckBox
+                android:id="@+id/zoom_buttons_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setZoomButtonsEnabled"
+                android:text="ZoomButton"
+                android:textColor="#ffffff" />
+
+            <CheckBox
+                android:id="@+id/ScrollGestures_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setScrollGesturesEnabled"
+                android:text="ScrollGestures"
+                android:textColor="#ffffff" />
+
+            <CheckBox
+                android:id="@+id/ZoomGestures_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setZoomGesturesEnabled"
+                android:text="ZoomGestures"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

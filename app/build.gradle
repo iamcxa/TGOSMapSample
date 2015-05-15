@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.supergeo.gcs.tgosmapsimple"
+        minSdkVersion 15
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.1.1'
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('C:/_github/TGOSMapSampleAndroid/libs/TGOS-Android-sdk.jar')
+}

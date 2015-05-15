@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="map_not_ready">map_not_ready</string>
+    <string name="app_name">TGOSMapSimple</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="base_map_demo">BaseMap_Demo</string>
+    <string name="BaseMap_Demo_description">建立地圖</string>
+    <string name="UIsetting">UISetting_Demo</string>
+    <string name="UIsetting_description">介面開關的控制</string>
+    <string name="marker_demo">Marker_Demo</string>
+    <string name="marker_demo_description">如何在地圖上加Marker</string>
+    <string name="event_demo">EventDemo</string>
+    <string name="event_demo_description">地圖上Event的事件</string>
+    <string name="polyline_demo">Polyline_Demo</string>
+    <string name="polyline_demo_description">如何在地圖上加Polyline</string>
+    <string name="circle_demo">CircleDemo</string>
+    <string name="circle_demo_description">如何在地圖上加圓</string>
+    <string name="polygon_demo">Polygon_Demo</string>
+    <string name="polygon_demo_description">如何在地圖上加Polygon</string>
+    <string name="map_type_demo">MapTypeDemo</string>
+    <string name="map_type_demo_description">改變不同的地圖樣式</string>
+
+    <string-array name="MapType_array">
+        <item>@string/TGOSMAP</item>
+        <item>@string/NLSCMAP</item>
+        <item>@string/ROADMAP</item>
+        <item>@string/F2IMAGE</item>
+    </string-array>
+
+    <string name="TGOSMAP">TGOSMAP</string>
+    <string name="NLSCMAP">NLSCMAP</string>
+    <string name="ROADMAP">ROADMAP</string>
+    <string name="F2IMAGE">F2IMAGE</string>
+    <string name="ground_demo">GroundDemo</string>
+    <string name="ground_demo_description">如何在地圖上使用Ground</string>
+    <string name="ardemo">ARDemo</string>
+    <string name="ardemo_description">如何使用AR</string>
+    <string name="viewer_update_demo">ViewerUpdateDemo</string>
+     <string name="viewer_update_demo_description">地圖的控制</string>
+
+</resources>
